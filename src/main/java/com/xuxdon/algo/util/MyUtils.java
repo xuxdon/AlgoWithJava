@@ -3,12 +3,16 @@ package com.xuxdon.algo.util;
 public class MyUtils {
 
     /**
-     * 实现交换数组 array 中下标为 a 和 b 的两个元素的功能
+     * 实现交换数组 array 中下标为 index1 和 index2 的两个元素的功能
+     
+     * @param array 目标元素所在的数组
+     * @param index1 元素所在下标
+     * @param index2 另一个元素的下标
      */
-    public static void swap(int[] array, int a, int b){
-        int temp = array[a];
-        array[a] = array[b];
-        array[b] = temp;
+    public static void swap(int[] array, int index1, int index2){
+        int temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
     }
 
 
